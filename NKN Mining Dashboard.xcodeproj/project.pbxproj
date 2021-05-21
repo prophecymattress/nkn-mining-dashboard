@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF12624E2657AE13005631BB /* CoreDataNodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF12624D2657AE13005631BB /* CoreDataNodeRepository.swift */; };
+		EF1262512657AE36005631BB /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF12624F2657AE36005631BB /* Model.xcdatamodeld */; };
+		EF898D0126419C8D00C38C3E /* DashboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D0026419C8D00C38C3E /* DashboardApp.swift */; };
+		EF898D0326419C8D00C38C3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D0226419C8D00C38C3E /* ContentView.swift */; };
+		EF898D0526419C9000C38C3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF898D0426419C9000C38C3E /* Assets.xcassets */; };
+		EF898D0826419C9000C38C3E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF898D0726419C9000C38C3E /* Preview Assets.xcassets */; };
+		EF898D112642A0D300C38C3E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EF898D102642A0D300C38C3E /* Alamofire */; };
+		EF898D142642E0E100C38C3E /* NodeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D132642E0E100C38C3E /* NodeCellView.swift */; };
+		EF898D172642E11800C38C3E /* NodeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D162642E11800C38C3E /* NodeListViewModel.swift */; };
+		EF898D192642E13900C38C3E /* NodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D182642E13900C38C3E /* NodeViewModel.swift */; };
+		EF898D1C2642E17200C38C3E /* NodeStateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D1B2642E17200C38C3E /* NodeStateRequest.swift */; };
+		EF898D1E2642E18600C38C3E /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D1D2642E18600C38C3E /* Empty.swift */; };
+		EF898D202642E19C00C38C3E /* NodeStateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D1F2642E19C00C38C3E /* NodeStateResponse.swift */; };
+		EF898D222642E1AC00C38C3E /* NodeStateResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D212642E1AC00C38C3E /* NodeStateResponseBody.swift */; };
+		EF898D242642E64200C38C3E /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D232642E64200C38C3E /* Theme.swift */; };
+		EF898D26264428FD00C38C3E /* TransactionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D25264428FD00C38C3E /* TransactionsResponse.swift */; };
+		EF898D28264429BB00C38C3E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D27264429BB00C38C3E /* Transaction.swift */; };
+		EF898D2A26442A9F00C38C3E /* RewardsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D2926442A9F00C38C3E /* RewardsListViewModel.swift */; };
+		EF898D2C26442ABE00C38C3E /* RewardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D2B26442ABE00C38C3E /* RewardViewModel.swift */; };
+		EF898D2E26442BAF00C38C3E /* NodeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D2D26442BAF00C38C3E /* NodeListView.swift */; };
+		EF898D3026442BC100C38C3E /* RewardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D2F26442BC100C38C3E /* RewardListView.swift */; };
+		EF898D322644468D00C38C3E /* RewardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D312644468D00C38C3E /* RewardCellView.swift */; };
+		EF898D35264487C100C38C3E /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D34264487C100C38C3E /* Node.swift */; };
+		EF898D37264487E500C38C3E /* NodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D36264487E500C38C3E /* NodeRepository.swift */; };
+		EF898D39264487FC00C38C3E /* InMemoryNodeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF898D38264487FC00C38C3E /* InMemoryNodeRepository.swift */; };
+		EFA496E3265673590071A803 /* NknApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA496E2265673590071A803 /* NknApi.swift */; };
+		EFA496E5265673960071A803 /* AlamofireNknApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA496E4265673960071A803 /* AlamofireNknApi.swift */; };
+		EFA496E7265675980071A803 /* NodeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA496E6265675980071A803 /* NodeApi.swift */; };
+		EFA496E9265675F60071A803 /* AlamofireNodeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA496E8265675F60071A803 /* AlamofireNodeApi.swift */; };
+		EFA496EB265678210071A803 /* NodeViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA496EA265678210071A803 /* NodeViewModelFactory.swift */; };
+		EFA496ED2656836C0071A803 /* AddNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA496EC2656836C0071A803 /* AddNodeView.swift */; };
+		EFA496EF26568E9E0071A803 /* AddNodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA496EE26568E9E0071A803 /* AddNodeViewModel.swift */; };
+		EFA496F2265696690071A803 /* Dip in Frameworks */ = {isa = PBXBuildFile; productRef = EFA496F1265696690071A803 /* Dip */; };
+		EFC1C4492657DA9D005A90F4 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC1C4482657DA9D005A90F4 /* Wallet.swift */; };
+		EFC1C44B2657DABD005A90F4 /* InMemoryWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC1C44A2657DABD005A90F4 /* InMemoryWallet.swift */; };
+		EFC1C44D2657DC37005A90F4 /* CoreDataWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC1C44C2657DC37005A90F4 /* CoreDataWallet.swift */; };
+		EFC1C44F2657E1DF005A90F4 /* EditWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC1C44E2657E1DF005A90F4 /* EditWalletView.swift */; };
+		EFC1C4512657E692005A90F4 /* EditWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC1C4502657E692005A90F4 /* EditWalletViewModel.swift */; };
+		EFC1C4532657EF05005A90F4 /* NSPersistentContainerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC1C4522657EF05005A90F4 /* NSPersistentContainerExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF12624D2657AE13005631BB /* CoreDataNodeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataNodeRepository.swift; sourceTree = "<group>"; };
+		EF1262502657AE36005631BB /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		EF898CFD26419C8D00C38C3E /* NKN Mining Dashboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NKN Mining Dashboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF898D0026419C8D00C38C3E /* DashboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardApp.swift; sourceTree = "<group>"; };
+		EF898D0226419C8D00C38C3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF898D0426419C9000C38C3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF898D0726419C9000C38C3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF898D0926419C9000C38C3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF898D132642E0E100C38C3E /* NodeCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeCellView.swift; sourceTree = "<group>"; };
+		EF898D162642E11800C38C3E /* NodeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeListViewModel.swift; sourceTree = "<group>"; };
+		EF898D182642E13900C38C3E /* NodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeViewModel.swift; sourceTree = "<group>"; };
+		EF898D1B2642E17200C38C3E /* NodeStateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeStateRequest.swift; sourceTree = "<group>"; };
+		EF898D1D2642E18600C38C3E /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
+		EF898D1F2642E19C00C38C3E /* NodeStateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeStateResponse.swift; sourceTree = "<group>"; };
+		EF898D212642E1AC00C38C3E /* NodeStateResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeStateResponseBody.swift; sourceTree = "<group>"; };
+		EF898D232642E64200C38C3E /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		EF898D25264428FD00C38C3E /* TransactionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsResponse.swift; sourceTree = "<group>"; };
+		EF898D27264429BB00C38C3E /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		EF898D2926442A9F00C38C3E /* RewardsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsListViewModel.swift; sourceTree = "<group>"; };
+		EF898D2B26442ABE00C38C3E /* RewardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewModel.swift; sourceTree = "<group>"; };
+		EF898D2D26442BAF00C38C3E /* NodeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeListView.swift; sourceTree = "<group>"; };
+		EF898D2F26442BC100C38C3E /* RewardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardListView.swift; sourceTree = "<group>"; };
+		EF898D312644468D00C38C3E /* RewardCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardCellView.swift; sourceTree = "<group>"; };
+		EF898D34264487C100C38C3E /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		EF898D36264487E500C38C3E /* NodeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeRepository.swift; sourceTree = "<group>"; };
+		EF898D38264487FC00C38C3E /* InMemoryNodeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryNodeRepository.swift; sourceTree = "<group>"; };
+		EFA496E2265673590071A803 /* NknApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NknApi.swift; sourceTree = "<group>"; };
+		EFA496E4265673960071A803 /* AlamofireNknApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNknApi.swift; sourceTree = "<group>"; };
+		EFA496E6265675980071A803 /* NodeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeApi.swift; sourceTree = "<group>"; };
+		EFA496E8265675F60071A803 /* AlamofireNodeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNodeApi.swift; sourceTree = "<group>"; };
+		EFA496EA265678210071A803 /* NodeViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeViewModelFactory.swift; sourceTree = "<group>"; };
+		EFA496EC2656836C0071A803 /* AddNodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNodeView.swift; sourceTree = "<group>"; };
+		EFA496EE26568E9E0071A803 /* AddNodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNodeViewModel.swift; sourceTree = "<group>"; };
+		EFC1C4482657DA9D005A90F4 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		EFC1C44A2657DABD005A90F4 /* InMemoryWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryWallet.swift; sourceTree = "<group>"; };
+		EFC1C44C2657DC37005A90F4 /* CoreDataWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataWallet.swift; sourceTree = "<group>"; };
+		EFC1C44E2657E1DF005A90F4 /* EditWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWalletView.swift; sourceTree = "<group>"; };
+		EFC1C4502657E692005A90F4 /* EditWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWalletViewModel.swift; sourceTree = "<group>"; };
+		EFC1C4522657EF05005A90F4 /* NSPersistentContainerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPersistentContainerExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF898CFA26419C8D00C38C3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFA496F2265696690071A803 /* Dip in Frameworks */,
+				EF898D112642A0D300C38C3E /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF12624C2657AE02005631BB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				EF12624D2657AE13005631BB /* CoreDataNodeRepository.swift */,
+				EFC1C44C2657DC37005A90F4 /* CoreDataWallet.swift */,
+				EF12624F2657AE36005631BB /* Model.xcdatamodeld */,
+				EFC1C4522657EF05005A90F4 /* NSPersistentContainerExtensions.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		EF898CF426419C8D00C38C3E = {
+			isa = PBXGroup;
+			children = (
+				EF898CFF26419C8D00C38C3E /* NKN Mining Dashboard */,
+				EF898CFE26419C8D00C38C3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF898CFE26419C8D00C38C3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF898CFD26419C8D00C38C3E /* NKN Mining Dashboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF898CFF26419C8D00C38C3E /* NKN Mining Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				EF12624C2657AE02005631BB /* CoreData */,
+				EF898D33264487B200C38C3E /* Model */,
+				EF898D1A2642E15F00C38C3E /* Network */,
+				EF898D152642E10B00C38C3E /* ViewModel */,
+				EF898D122642E0C500C38C3E /* View */,
+				EF898D0026419C8D00C38C3E /* DashboardApp.swift */,
+				EF898D0226419C8D00C38C3E /* ContentView.swift */,
+				EF898D0426419C9000C38C3E /* Assets.xcassets */,
+				EF898D0926419C9000C38C3E /* Info.plist */,
+				EF898D0626419C9000C38C3E /* Preview Content */,
+			);
+			path = "NKN Mining Dashboard";
+			sourceTree = "<group>";
+		};
+		EF898D0626419C9000C38C3E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF898D0726419C9000C38C3E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF898D122642E0C500C38C3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFA496EC2656836C0071A803 /* AddNodeView.swift */,
+				EFC1C44E2657E1DF005A90F4 /* EditWalletView.swift */,
+				EF898D132642E0E100C38C3E /* NodeCellView.swift */,
+				EF898D2D26442BAF00C38C3E /* NodeListView.swift */,
+				EF898D312644468D00C38C3E /* RewardCellView.swift */,
+				EF898D2F26442BC100C38C3E /* RewardListView.swift */,
+				EF898D232642E64200C38C3E /* Theme.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EF898D152642E10B00C38C3E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EFA496EE26568E9E0071A803 /* AddNodeViewModel.swift */,
+				EFC1C4502657E692005A90F4 /* EditWalletViewModel.swift */,
+				EF898D162642E11800C38C3E /* NodeListViewModel.swift */,
+				EF898D182642E13900C38C3E /* NodeViewModel.swift */,
+				EFA496EA265678210071A803 /* NodeViewModelFactory.swift */,
+				EF898D2926442A9F00C38C3E /* RewardsListViewModel.swift */,
+				EF898D2B26442ABE00C38C3E /* RewardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EF898D1A2642E15F00C38C3E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EFA496E4265673960071A803 /* AlamofireNknApi.swift */,
+				EFA496E8265675F60071A803 /* AlamofireNodeApi.swift */,
+				EF898D1D2642E18600C38C3E /* Empty.swift */,
+				EFA496E2265673590071A803 /* NknApi.swift */,
+				EFA496E6265675980071A803 /* NodeApi.swift */,
+				EF898D1B2642E17200C38C3E /* NodeStateRequest.swift */,
+				EF898D1F2642E19C00C38C3E /* NodeStateResponse.swift */,
+				EF898D212642E1AC00C38C3E /* NodeStateResponseBody.swift */,
+				EF898D27264429BB00C38C3E /* Transaction.swift */,
+				EF898D25264428FD00C38C3E /* TransactionsResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EF898D33264487B200C38C3E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF898D38264487FC00C38C3E /* InMemoryNodeRepository.swift */,
+				EFC1C44A2657DABD005A90F4 /* InMemoryWallet.swift */,
+				EF898D34264487C100C38C3E /* Node.swift */,
+				EF898D36264487E500C38C3E /* NodeRepository.swift */,
+				EFC1C4482657DA9D005A90F4 /* Wallet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF898CFC26419C8D00C38C3E /* NKN Mining Dashboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF898D0C26419C9000C38C3E /* Build configuration list for PBXNativeTarget "NKN Mining Dashboard" */;
+			buildPhases = (
+				EF898CF926419C8D00C38C3E /* Sources */,
+				EF898CFA26419C8D00C38C3E /* Frameworks */,
+				EF898CFB26419C8D00C38C3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NKN Mining Dashboard";
+			packageProductDependencies = (
+				EF898D102642A0D300C38C3E /* Alamofire */,
+				EFA496F1265696690071A803 /* Dip */,
+			);
+			productName = "NKN Mining Dashboard";
+			productReference = EF898CFD26419C8D00C38C3E /* NKN Mining Dashboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF898CF526419C8D00C38C3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EF898CFC26419C8D00C38C3E = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = EF898CF826419C8D00C38C3E /* Build configuration list for PBXProject "NKN Mining Dashboard" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF898CF426419C8D00C38C3E;
+			packageReferences = (
+				EF898D0F2642A0D200C38C3E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				EFA496F0265696690071A803 /* XCRemoteSwiftPackageReference "Dip" */,
+			);
+			productRefGroup = EF898CFE26419C8D00C38C3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF898CFC26419C8D00C38C3E /* NKN Mining Dashboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF898CFB26419C8D00C38C3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF898D0826419C9000C38C3E /* Preview Assets.xcassets in Resources */,
+				EF898D0526419C9000C38C3E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF898CF926419C8D00C38C3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC1C4492657DA9D005A90F4 /* Wallet.swift in Sources */,
+				EF898D2A26442A9F00C38C3E /* RewardsListViewModel.swift in Sources */,
+				EF898D2C26442ABE00C38C3E /* RewardViewModel.swift in Sources */,
+				EF898D202642E19C00C38C3E /* NodeStateResponse.swift in Sources */,
+				EF898D35264487C100C38C3E /* Node.swift in Sources */,
+				EFC1C44F2657E1DF005A90F4 /* EditWalletView.swift in Sources */,
+				EF12624E2657AE13005631BB /* CoreDataNodeRepository.swift in Sources */,
+				EFA496E3265673590071A803 /* NknApi.swift in Sources */,
+				EF898D0326419C8D00C38C3E /* ContentView.swift in Sources */,
+				EFA496EF26568E9E0071A803 /* AddNodeViewModel.swift in Sources */,
+				EFA496E7265675980071A803 /* NodeApi.swift in Sources */,
+				EF898D28264429BB00C38C3E /* Transaction.swift in Sources */,
+				EFC1C44B2657DABD005A90F4 /* InMemoryWallet.swift in Sources */,
+				EFA496EB265678210071A803 /* NodeViewModelFactory.swift in Sources */,
+				EF898D192642E13900C38C3E /* NodeViewModel.swift in Sources */,
+				EF898D222642E1AC00C38C3E /* NodeStateResponseBody.swift in Sources */,
+				EF898D142642E0E100C38C3E /* NodeCellView.swift in Sources */,
+				EF898D0126419C8D00C38C3E /* DashboardApp.swift in Sources */,
+				EF898D172642E11800C38C3E /* NodeListViewModel.swift in Sources */,
+				EF898D242642E64200C38C3E /* Theme.swift in Sources */,
+				EF898D322644468D00C38C3E /* RewardCellView.swift in Sources */,
+				EF898D3026442BC100C38C3E /* RewardListView.swift in Sources */,
+				EFA496E5265673960071A803 /* AlamofireNknApi.swift in Sources */,
+				EFA496E9265675F60071A803 /* AlamofireNodeApi.swift in Sources */,
+				EF898D26264428FD00C38C3E /* TransactionsResponse.swift in Sources */,
+				EF898D1E2642E18600C38C3E /* Empty.swift in Sources */,
+				EF898D2E26442BAF00C38C3E /* NodeListView.swift in Sources */,
+				EFC1C4512657E692005A90F4 /* EditWalletViewModel.swift in Sources */,
+				EFA496ED2656836C0071A803 /* AddNodeView.swift in Sources */,
+				EFC1C44D2657DC37005A90F4 /* CoreDataWallet.swift in Sources */,
+				EF898D39264487FC00C38C3E /* InMemoryNodeRepository.swift in Sources */,
+				EFC1C4532657EF05005A90F4 /* NSPersistentContainerExtensions.swift in Sources */,
+				EF898D1C2642E17200C38C3E /* NodeStateRequest.swift in Sources */,
+				EF898D37264487E500C38C3E /* NodeRepository.swift in Sources */,
+				EF1262512657AE36005631BB /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EF898D0A26419C9000C38C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF898D0B26419C9000C38C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF898D0D26419C9000C38C3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NKN Mining Dashboard/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NKN Mining Dashboard/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.NKN-Mining-Dashboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF898D0E26419C9000C38C3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"NKN Mining Dashboard/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "NKN Mining Dashboard/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.NKN-Mining-Dashboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF898CF826419C8D00C38C3E /* Build configuration list for PBXProject "NKN Mining Dashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF898D0A26419C9000C38C3E /* Debug */,
+				EF898D0B26419C9000C38C3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF898D0C26419C9000C38C3E /* Build configuration list for PBXNativeTarget "NKN Mining Dashboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF898D0D26419C9000C38C3E /* Debug */,
+				EF898D0E26419C9000C38C3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF898D0F2642A0D200C38C3E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		EFA496F0265696690071A803 /* XCRemoteSwiftPackageReference "Dip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Dip";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF898D102642A0D300C38C3E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF898D0F2642A0D200C38C3E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		EFA496F1265696690071A803 /* Dip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EFA496F0265696690071A803 /* XCRemoteSwiftPackageReference "Dip" */;
+			productName = Dip;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		EF12624F2657AE36005631BB /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EF1262502657AE36005631BB /* Model.xcdatamodel */,
+			);
+			currentVersion = EF1262502657AE36005631BB /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EF898CF526419C8D00C38C3E /* Project object */;
+}
